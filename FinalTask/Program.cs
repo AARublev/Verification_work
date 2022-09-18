@@ -28,8 +28,8 @@ string[] ChoiseThre(string[] arr)
     {
         if (arr[i].Length <= 3) newArr[i] = arr[i];
     }
-    string[] test = newArr.Where(x => !string.IsNullOrEmpty(x)).ToArray();
-    return test;
+    string[] arrDelNon = newArr.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+    return arrDelNon;
 }
 
 void PrintArrayString(string[] array)
